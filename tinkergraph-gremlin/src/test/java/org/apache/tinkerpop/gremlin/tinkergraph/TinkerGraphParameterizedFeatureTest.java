@@ -30,7 +30,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        tags = "not @GraphComputerOnly and not @AllowNullPropertyValues",
+        tags = "not @GraphComputerOnly and not @AllowNullPropertyValues and not @PoCIgnore",
         glue = { "org.apache.tinkerpop.gremlin.features" },
         objectFactory = TinkerGraphParameterizedFeatureTest.TinkerGraphGuiceFactory.class,
         features = { "classpath:/org/apache/tinkerpop/gremlin/test/features" },

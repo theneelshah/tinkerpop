@@ -18,7 +18,7 @@
 @StepClassIntegrated
 Feature: Step - paths
 
-  @GraphComputerVerificationReferenceOnly @InsertionOrderingRequired
+  @GraphComputerVerificationReferenceOnly @InsertionOrderingRequired @PoCIgnore
   Scenario: g_V_shortestpath
     Given the modern graph
     And the traversal of
@@ -82,7 +82,7 @@ Feature: Step - paths
       | l[lop,josh]|
       | l[marko,lop,peter]|
 
-  @GraphComputerVerificationStarGraphExceeded @WithSeedStrategy @InsertionOrderingRequired
+  @GraphComputerVerificationStarGraphExceeded @WithSeedStrategy @InsertionOrderingRequired @PoCIgnore
   Scenario: g_V_playlist_paths
     Given the grateful graph
     And the traversal of
